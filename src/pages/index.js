@@ -4,7 +4,7 @@ import Layout from "../components/layout.js"
 export default function IndexPage() {
   return (
     <Layout>
-      <p>Hello, this is me speaking</p>
+      <p>Do you like generic haircuts? Then go to the generic hairdresser!</p>
     </Layout>  
   )
 }
