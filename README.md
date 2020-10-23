@@ -12,6 +12,8 @@ Template for the website of e.g. a hairdressing salon.
 Feel free to browse the code, although it is **not** open source.
 A huge shoutout to [wanLo](https://github.com/wanLo), whose repository [buchbinderei](https://github.com/wanLo/buchbinderei) was a great inspiration for this.
 
+A [live version](https://laurenzfg-generic-hairdresser.netlify.app/) of the repo is hosted at Netlify. 
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
