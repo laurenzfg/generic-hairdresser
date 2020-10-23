@@ -1,25 +1,23 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import {graphql, Link, useStaticQuery } from "gatsby"
 import logo from "../images/logo.png"
 
-export default function MainMenu({ data }) {
-	return (
-    <StaticQuery
-    query={graphql`
-      {
-        allMarkdownRemark {
-          edges {
-            node {
-              frontmatter {
-                path
-                title
-              }
-            }
+export default function MainMenu() {
+  const data = useStaticQuery(graphql`
+  {
+    allMarkdownRemark(filter: {frontmatter: {menu: {eq: "main"}, path: {ne: "/"}}}) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
           }
         }
       }
-    `}
-    render={data => (
+    }
+  }`)
+
+	return (
       <div class="flex flex-col space-y-2 text-gray-900">
       <img
         src={logo}
@@ -37,7 +35,5 @@ export default function MainMenu({ data }) {
       </div>
       ))}
 	  </div>
-    )}
-    />
 	)
 }
