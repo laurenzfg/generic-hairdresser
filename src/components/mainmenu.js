@@ -19,11 +19,13 @@ export default function MainMenu() {
 
 	return (
       <div class="flex flex-col space-y-2 text-gray-900">
-      <img
-        src={logo}
-        alt="Logo"
-        class="px-4 py-2 w-full h-16 lg:h-20 object-left object-contain"
-      />
+      <Link to="/">
+        <img
+          src={logo}
+          alt="Logo"
+          class="px-4 py-2 w-full h-16 lg:h-20 object-left object-contain"
+        />
+      </Link>
       {/* active highlighting */}
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div class="rounded">
