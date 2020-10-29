@@ -20,7 +20,7 @@ export default function Layout({ children, location }) {
   }
 
   return (
-    <div class="container mx-auto min-h-screen flex flex-col px-2">
+    <div class="container mx-auto min-h-screen flex flex-col px-2 sm:p-2">
       {/*Desktop Nav, full size, always visible */}
       <div class="md:flex flex-grow">
         <div class="hidden md:block w-1/5 mr-1 flex-shrink-0">
