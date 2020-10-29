@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import logo from "../images/logo.png"
 
 
-export default function Layout({ children }) {
+export default function Layout({ children, location }) {
   /* set state to initial state, gets us a gettter and a setter function*/
   const [state, setState] = useState({
     showContent: true,
@@ -26,7 +26,8 @@ export default function Layout({ children }) {
         <div class="hidden md:block w-1/5 mr-1 flex-shrink-0">
           <div class="sticky top-0 pt-4 sm:pt-6 md:pt-8">
             <MainMenu
-            showLogo={true} />
+            showLogo={true} 
+            curPath={location.pathname}/>
           </div>
         </div>
       {/*Mobile Nav, collapsed */}
@@ -53,8 +54,9 @@ export default function Layout({ children }) {
       <MainMenu
         showLogo="false"
         class="absolute"
-        style="width: calc(100% - 1rem);"
-        onClickAction="showMenu = false"
+        style={{width: "calc(100% - 1rem)"}}
+        onActiveClickAction={toggleMobileMenu}
+        curPath={location.pathname}
       ></MainMenu>
       }
       {(state.showMobileMenu===false && state.showContent===true) &&

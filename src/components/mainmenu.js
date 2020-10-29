@@ -29,15 +29,30 @@ export default function MainMenu(props) {
         </Link>
       }
       {/* active highlighting */}
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div class="rounded">
-        <div
-          class="px-4 py-2 break-words md:hover:text-cd-red transition-colors ease-in-out duration-200"
-        >
-          <p><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></p>
-        </div>
-      </div>
-      ))}
+      {data.allMarkdownRemark.edges.map(({ node }) => {
+        if(props.curPath!==node.frontmatter.path) {
+          return (
+            <div class="rounded">
+            <div
+              class="px-4 py-2 break-words md:hover:text-cd-red transition-colors ease-in-out duration-200"
+            >
+              <p><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></p>
+            </div>
+          </div>
+          )
+        } else {
+          return (
+            <div class="rounded">
+              <button
+                class="px-4 py-2 break-words md:hover:text-cd-red transition-colors ease-in-out duration-200 text-gray-700"
+                onClick={props.onActiveClickAction}
+              >
+                <p>{node.frontmatter.title}</p>
+              </button>
+            </div>
+          )
+        }
+      })}
 	  </div>
 	)
 }

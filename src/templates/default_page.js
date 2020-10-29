@@ -2,11 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
-export default function DefaultPage({ data }) {
+export default function DefaultPage({ data, location }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
+    <Layout location={location}>
       <h1>{frontmatter.title}</h1>
       <div
         className="blog-post-content"
