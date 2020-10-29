@@ -7,6 +7,13 @@ export default function DefaultPage({ data, location }) {
   const { frontmatter, html } = markdownRemark
   return (
     <Layout location={location}>
+      {frontmatter.title_image &&
+        <img
+          src={frontmatter.title_image}
+          alt={frontmatter.title_image_alt}
+          class="title-picture"
+        />
+      }
       <h1>{frontmatter.title}</h1>
       <div
         className="blog-post-content"
@@ -23,6 +30,8 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        title_image
+        title_image_alt
       }
     }
   }
