@@ -52,11 +52,12 @@ export default function Layout({ children, location }) {
       </div>
       {state.showMobileMenu===true && 
       <MainMenu
-        showLogo="false"
+        showLogo={false}
         class="absolute"
         style={{width: "calc(100% - 1rem)"}}
         onActiveClickAction={toggleMobileMenu}
         curPath={location.pathname}
+        includeHome ={true}
       ></MainMenu>
       }
       {(state.showMobileMenu===false && state.showContent===true) &&
