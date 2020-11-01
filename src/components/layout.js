@@ -27,7 +27,7 @@ export default function Layout({ children, location }) {
           <div class="sticky top-0 pt-4 sm:pt-6 md:pt-8">
             <MainMenu
             showLogo={true} 
-            curPath={location.pathname}/>
+            curPath={location?.pathname}/>
           </div>
         </div>
       {/*Mobile Nav, collapsed */}
