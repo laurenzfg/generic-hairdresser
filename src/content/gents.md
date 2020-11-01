@@ -1,6 +1,6 @@
 ---
-title: Herren
-path: /herren
+title: Gents
+path: /gents
 menu: main
 title_image: https://placekitten.com/1500/600
 title_image_alt: Sweet Kitten
