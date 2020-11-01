@@ -2,6 +2,7 @@
 title: Children
 path: /children
 menu: main
+order: 300
 title_image: https://placekitten.com/1500/600
 title_image_alt: Sweet Kitten
 ---

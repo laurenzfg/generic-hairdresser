@@ -2,6 +2,7 @@
 title: Gents
 path: /gents
 menu: main
+order: 200
 title_image: https://placekitten.com/1500/600
 title_image_alt: Sweet Kitten
 sidebar_images: [['https://placekitten.com/300/300','Sweet Kitten'],

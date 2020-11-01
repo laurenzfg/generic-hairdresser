@@ -6,12 +6,23 @@ import MainMenuItem from "./mainmenu_item"
 export default function MainMenu(props) {
   const data = useStaticQuery(graphql`
   {
-    allMarkdownRemark(filter: {frontmatter: {menu: {eq: "main"}, path: {ne: "/"}}}) {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: {menu: {eq: "main"},
+                      path: {ne: "/"}
+                    }
+      },
+      sort: {
+        fields: [frontmatter___order,]
+        order: ASC
+      },
+    ) {
       edges {
         node {
           frontmatter {
             path
             title
+            order
           }
         }
       }

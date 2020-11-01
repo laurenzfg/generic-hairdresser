@@ -2,6 +2,7 @@
 title: Ladies
 path: /ladies
 menu: main
+order: 100
 sidebar_images: [['https://placekitten.com/300/300','Sweet Kitten'],
     ['https://placekitten.com/300/300','Very Sweet Kitten'],
     ['https://placekitten.com/300/300','Tremendously Sweet Kitten']]
