@@ -1,6 +1,6 @@
 /**
- * Template currently has no favicon support. We could do this by including using
- * gatsby-plugin-manifest or just including a favicon .ico
+ * Template does legacy favicon (.ico at well known location).
+ * We could improve this by including using gatsby-plugin-manifest.
  * Another nice feature would be automatic image processing using
  * gatsby-transformer-sharp and gatsby-plugin-sharp
  */
