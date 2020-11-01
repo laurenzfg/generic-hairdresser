@@ -7,18 +7,35 @@ export default function DefaultPage({ data, location }) {
   const { frontmatter, html } = markdownRemark
   return (
     <Layout location={location}>
-      {frontmatter.title_image &&
-        <img
-          src={frontmatter.title_image}
-          alt={frontmatter.title_image_alt}
-          class="title-picture"
-        />
-      }
-      <h1>{frontmatter.title}</h1>
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+
+      <div class="flex md:flex-row md:flex-no-wrap flex-col flex-wrap">
+        <div class="flex-grow">
+          {frontmatter.title_image &&
+            <img
+              src={frontmatter.title_image}
+              alt={frontmatter.title_image_alt}
+              class="title-picture w-scree"
+            />
+          }
+          <h1>{frontmatter.title}</h1>
+          <div
+            class=""
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+        {frontmatter.sidebar_images && 
+          <div class="ml-3 flex-none flex md:flex-col md:w-3/12 md:flex-no-wrap flex-row flex-wrap">
+            {frontmatter.sidebar_images.map((ele) => (
+              <div class="flex-initial md:pb-4 md:m-0 m-4 w-48 mx-auto">
+                <img
+                  src={ele[0]}
+                  alt={ele[1]}
+                />
+              </div>
+            ))}
+          </div>
+        }
+        </div>
     </Layout>
   )
 }
@@ -32,6 +49,7 @@ export const pageQuery = graphql`
         title
         title_image
         title_image_alt
+        sidebar_images
       }
     }
   }
