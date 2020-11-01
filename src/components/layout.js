@@ -31,7 +31,7 @@ export default function Layout({ children, location }) {
           </div>
         </div>
       {/*Mobile Nav, collapsed */}
-      <div class="block md:hidden flex mb-1">
+      <div class="md:hidden flex mb-1">
         <Link to="/">
           <img
             src={logo}
