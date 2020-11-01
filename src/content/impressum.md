@@ -1,5 +1,6 @@
 ---
 title: Impressum
+description: Hier finde Sie das Impressum des Generic Hairdressers!
 path: /impressum
 menu: legal
 ---

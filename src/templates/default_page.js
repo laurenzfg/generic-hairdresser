@@ -1,11 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
+import Header from "../components/SEO.js"
 import { graphql } from "gatsby"
 
 export default function DefaultPage({ data, location }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
+    <>
+    <Header title={frontmatter.title} description={frontmatter.description} />
     <Layout location={location}>
       {frontmatter.title_image &&
             <img
@@ -37,6 +40,7 @@ export default function DefaultPage({ data, location }) {
         }
         </div>
     </Layout>
+    </>
   )
 }
 
@@ -50,6 +54,7 @@ export const pageQuery = graphql`
         title_image
         title_image_alt
         sidebar_images
+        description
       }
     }
   }

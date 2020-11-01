@@ -1,5 +1,7 @@
 ---
 title: Ladies
+description: Ladies get the best haircuts
+    a the generic hairdresser
 path: /ladies
 menu: main
 order: 100

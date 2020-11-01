@@ -1,5 +1,7 @@
 ---
 title: Children
+description: Ladies get the best haircuts
+    a the generic hairdresser
 path: /children
 menu: main
 order: 300

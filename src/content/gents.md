@@ -1,5 +1,7 @@
 ---
 title: Gents
+description: Gents get the best haircuts
+    a the generic hairdresser
 path: /gents
 menu: main
 order: 200
