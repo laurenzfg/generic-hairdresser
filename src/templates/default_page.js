@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import Header from "../components/SEO.js"
+import Header from "../components/seo"
 import { graphql } from "gatsby"
 
 export default function DefaultPage({ data, location }) {
