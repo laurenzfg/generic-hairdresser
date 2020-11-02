@@ -36,7 +36,7 @@ export default function Layout({ children, location }) {
           <img
             src={logo}
             alt="Logo"
-            class="px-4 py-2 w-full h-16 lg:h-20 object-left object-contain"
+            class="px-0 py-2 w-full h-16 lg:h-20 object-left object-contain"
           />
         </Link>
         <div class="flex-grow"></div>
