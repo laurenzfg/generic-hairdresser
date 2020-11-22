@@ -6,7 +6,8 @@ import SEO from "../components/seo"
 const kontakt = () => (
   <Layout location={{pathname : '/kontakt'}}>
     <SEO title="Kontaktformular" />
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
               <div class="px-4 py-5 bg-white sm:p-6">
                 <div class="grid grid-cols-6 gap-6">
                   <div class="col-span-6">
