@@ -1,12 +1,8 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Generic Hairdressers' homepage using Gatsby
-</h1>
+# Generic Hairdressers' homepage using Gatsby
+
+<div style="font-size: 4em; text-align: center">
+  💇
+</div>
 
 Template for the website of e.g. a hairdressing salon.
 Feel free to browse the code, although it is **not** open source.
@@ -14,15 +10,26 @@ A huge shoutout to [wanLo](https://github.com/wanLo), whose repository [buchbind
 
 A [live version](https://laurenzfg-generic-hairdresser.netlify.app/) of the repo is hosted at Netlify. 
 
-## How to run?
+## 🏃 How to run?
 
-    Navigate into your new site’s directory and start it up.
+  Navigate into your new site’s directory and start it up.
+  Prerequisites are:
+    - A working installation of nodejs + npm
+    - A global installation of [gatsby](https://www.gatsbyjs.com/) (tested: v2.27.0)
 
-    ```shell
-    cd generic-haridresser
-    gatsby develop
-    ```
+  ```shell
+  cd generic-haridresser
+  npm install
+  gatsby develop
+  ```
 
+## 👷 What can stillt be improved?
+
+The template is still far from perfect:
+- [ ] Use `gatsby-plugin-manifest` to include the favicon the modern way. Currently it's still a good ol' .ico in the root folder
+- [ ] Include images in the pipeline. Images are currently plain .jpg assets. The pipeline could convert them to webp and make rendering faster by inserting a placeholder during the HTTP requests.
+- [ ] Specify a schema for the markdown frontmatter. Currently, this is dynamically populated. Thus all fields have to be present at least once, otherwise a different schema is deducted and compilation fails.
+- [ ] Make the contact form look less foreign.
 
 ## 🧐 What's inside?
 
