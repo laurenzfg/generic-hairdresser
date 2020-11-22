@@ -7,10 +7,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Nolte Stiftung`,
-    description: `Homepage der Heinrich und Anny Nolte Stiftung für die Förderung
-      von Kunst und Kultur sowie der Jugend- und Altenhilfe`,
-    author: `Heinrich und Anny Nolte Stiftung`,
+    title: `Generic Hairdresser`,
+    description: `Homepage of the Generic Hairdresser`,
+    author: `Generic Hairdresser mbH`,
     lang: `de`,
   },
   plugins: [
