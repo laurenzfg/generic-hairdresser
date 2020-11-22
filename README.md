@@ -1,8 +1,4 @@
-# Generic Hairdressers' homepage using Gatsby
-
-<div style="font-size: 4em; text-align: center">
-  💇
-</div>
+# 💇 Generic Hairdressers' homepage using Gatsby
 
 Template for the website of e.g. a hairdressing salon.
 Feel free to browse the code, although it is **not** open source.
