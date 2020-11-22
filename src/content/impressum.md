@@ -12,4 +12,5 @@ Generic Street 123
 1000 Generic Town
 Generic Country</pre>
 
-If you really want to get in touch with me, head to [laurenzfg.com](https://laurenzfg.com)
+If you really want to get in touch with me, head to [laurenzfg.com](https://laurenzfg.com).
+Or you can use our [fake contact form](/kontakt).

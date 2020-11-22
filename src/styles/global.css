@@ -5,8 +5,27 @@
 @layer base {
   h1 {
     @apply text-2xl;
+    @apply mb-3;
   }
   h2 {
     @apply text-xl;
+    @apply my-2;
+  }
+  h3 {
+    @apply my-2;
+  }
+  button {
+    @apply text-left;
+  }
+  main p {
+    @apply pb-1;
+    @apply text-justify;
+  }
+  main ul {
+    @apply list-disc;
+    @apply ml-8;
+  }
+  main a {
+    @apply text-blue-600;
   }
 }

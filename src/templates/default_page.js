@@ -17,17 +17,17 @@ export default function DefaultPage({ data, location }) {
               class="title-picture md:w-screen mb-6"
             />
           }
-      <div class="flex md:flex-row md:flex-no-wrap flex-col flex-wrap">
+      <div class="flex md:flex-row md:flex-nowrap flex-col flex-wrap">
         <div class="flex-grow">
           
-          <h1>{frontmatter.title}</h1>
+          <h1>{frontmatter.longtitle || frontmatter.title}</h1>
           <div
             class=""
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
         {frontmatter.sidebar_images && 
-          <div class="flex-none flex md:flex-col flex-row flex-wrap md:flex-no-wrap w-screen md:w-1/4 md:ml-3 mt-3 md:mt-0 place-items-auto md:place-items-end">
+          <div class="flex-none flex md:flex-col flex-row flex-wrap md:flex-no-wrap md:w-1/4 md:ml-6 mt-3 md:mt-0 place-items-auto md:place-items-end">
             {frontmatter.sidebar_images.map((ele) => (
               <div class="flex-initial pb-4 mx-auto">
                 <img
@@ -51,6 +51,7 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        longtitle
         title_image
         title_image_alt
         sidebar_images

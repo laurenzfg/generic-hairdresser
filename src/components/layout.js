@@ -20,7 +20,7 @@ export default function Layout({ children, location }) {
   }
 
   return (
-    <div class="container mx-auto min-h-screen flex flex-col px-2 sm:p-2">
+    <div class="container mx-auto min-h-screen flex flex-col px-3">
       {/*Desktop Nav, full size, always visible */}
       <div class="md:flex flex-grow">
         <div class="hidden md:block w-1/5 mr-1 flex-shrink-0">
@@ -61,13 +61,13 @@ export default function Layout({ children, location }) {
       ></MainMenu>
       }
       {(state.showMobileMenu===false && state.showContent===true) &&
-        <div class="pt-4 sm:pt-6 md:pt-8">
+        <main class="pt-4 sm:pt-6 md:pt-8">
           {children}
-        </div>
+        </main>
       }
       </div>
       {state.showMobileMenu===false &&
-      <div class="md:flex mt-1 pb-4 sm:pb-6 md:pb-8">
+      <div class="md:flex mt-1 mb-1">
         <div class="hidden md:block w-1/5 mr-1 flex-shrink-0"></div>
         <div class="bg-white w-full md:w-4/5 rounded">
           <Footer />

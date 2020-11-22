@@ -1,5 +1,6 @@
 ---
 title: Generic Hairdresser
+longtitle: Generic Hairdresser John Doe
 path: /
 menu: main
 ---
