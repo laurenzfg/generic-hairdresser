@@ -5,6 +5,11 @@
  * gatsby-transformer-sharp and gatsby-plugin-sharp
  */
 
+ /**
+  * This would be the starting point to integrate nice image support:
+  * https://www.gatsbyjs.com/docs/recipes/working-with-images/#optimizing-and-querying-images-in-post-frontmatter-with-gatsby-image
+  */
+
 module.exports = {
   siteMetadata: {
     title: `Generic Hairdresser`,
