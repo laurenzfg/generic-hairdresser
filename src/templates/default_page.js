@@ -28,8 +28,8 @@ export default function DefaultPage({ data, location }) {
         </div>
         {frontmatter.sidebar_images && 
           <div className="flex-none flex md:flex-col flex-row flex-wrap md:flex-no-wrap md:w-1/4 md:ml-6 mt-3 md:mt-0 place-items-auto md:place-items-end">
-            {frontmatter.sidebar_images.map((ele) => (
-              <div className="flex-initial pb-4 mx-auto">
+            {frontmatter.sidebar_images.map((ele, index) => (
+              <div className="flex-initial pb-4 mx-auto" key={index}>
                 <img
                   src={ele[0]}
                   alt={ele[1]}
