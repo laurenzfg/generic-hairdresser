@@ -44,13 +44,15 @@ export default function MainMenu(props) {
         <MainMenuItem
         curPath={props.curPath}
         path="/"
+        key="/"
         onActiveClickAction={props.onActiveClickAction} 
         title="Home" />
       }
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <MainMenuItem
           curPath={props.curPath}
-          path={node.frontmatter.path} 
+          path={node.frontmatter.path}
+          key={node.frontmatter.path}
           onActiveClickAction={props.onActiveClickAction} 
           title={node.frontmatter.title} />
       ))}

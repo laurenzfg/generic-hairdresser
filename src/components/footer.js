@@ -31,6 +31,7 @@ export default function Footer() {
       <div>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div
+          key={node.frontmatter.path}
           className="inline-block ml-2 md:mr-6 lg:mr-8 hover:text-gray-900"
         >
           <p><Link to={node.frontmatter.path}>{node.frontmatter.title}</Link></p>
