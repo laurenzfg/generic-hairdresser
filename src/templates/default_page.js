@@ -14,22 +14,22 @@ export default function DefaultPage({ data, location }) {
             <img
               src={frontmatter.title_image}
               alt={frontmatter.title_image_alt}
-              class="title-picture md:w-screen mb-6"
+              className="title-picture md:w-screen mb-6"
             />
           }
-      <div class="flex md:flex-row md:flex-nowrap flex-col flex-wrap">
-        <div class="flex-grow">
+      <div className="flex md:flex-row md:flex-nowrap flex-col flex-wrap">
+        <div className="flex-grow">
           
           <h1>{frontmatter.longtitle || frontmatter.title}</h1>
           <div
-            class=""
+            className=""
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
         {frontmatter.sidebar_images && 
-          <div class="flex-none flex md:flex-col flex-row flex-wrap md:flex-no-wrap md:w-1/4 md:ml-6 mt-3 md:mt-0 place-items-auto md:place-items-end">
+          <div className="flex-none flex md:flex-col flex-row flex-wrap md:flex-no-wrap md:w-1/4 md:ml-6 mt-3 md:mt-0 place-items-auto md:place-items-end">
             {frontmatter.sidebar_images.map((ele) => (
-              <div class="flex-initial pb-4 mx-auto">
+              <div className="flex-initial pb-4 mx-auto">
                 <img
                   src={ele[0]}
                   alt={ele[1]}

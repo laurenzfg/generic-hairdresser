@@ -30,13 +30,13 @@ export default function MainMenu(props) {
   }`)
 
 	return (
-      <div class="flex flex-col space-y-2 text-gray-900">
+      <div className="flex flex-col space-y-2 text-gray-900">
       {props.showLogo===true &&
         <Link to="/">
           <img
             src={logo}
             alt="Logo"
-            class="px-4 py-2 w-full h-16 lg:h-20 object-left object-contain"
+            className="px-4 py-2 w-full h-16 lg:h-20 object-left object-contain"
           />
         </Link>
       }
