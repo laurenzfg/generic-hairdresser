@@ -30,7 +30,6 @@ export default function Layout({ children, location }) {
             curPath={location?.pathname}/>
           </div>
         </div>
-      </div>
       {/*Mobile Nav, collapsed */}
       <div className="md:hidden flex mb-1">
         <Link to="/">
@@ -52,20 +51,21 @@ export default function Layout({ children, location }) {
         </button>
       </div>
       {state.showMobileMenu===true && 
-        <MainMenu
-          showLogo={false}
-          className="absolute"
-          style={{width: "calc(100% - 1rem)"}}
-          onActiveClickAction={toggleMobileMenu}
-          curPath={location.pathname}
-          includeHome ={true}
-        ></MainMenu>
+      <MainMenu
+        showLogo={false}
+        className="absolute"
+        style={{width: "calc(100% - 1rem)"}}
+        onActiveClickAction={toggleMobileMenu}
+        curPath={location.pathname}
+        includeHome ={true}
+      ></MainMenu>
       }
       {(state.showMobileMenu===false && state.showContent===true) &&
         <main className="pt-4 sm:pt-6 md:pt-8">
           {children}
         </main>
       }
+      </div>
       {state.showMobileMenu===false &&
       <div className="md:flex mt-1 mb-1">
         <div className="hidden md:block w-1/5 mr-1 flex-shrink-0"></div>
