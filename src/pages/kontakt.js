@@ -15,19 +15,19 @@ const kontakt = () => (
                     <p>Drop us a message!</p>
                   </div>
                   <div className="col-span-6 sm:col-span-3">
-                    <label for="first_name" className="block text-sm font-medium text-gray-700">First name
+                    <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">First name
                     <input type="text" id="first_name" name="first_name" className="mt-1 focus:ring-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" /></label>
                   </div>
                   <div className="col-span-6 sm:col-span-3">
-                    <label for="last_name" className="block text-sm font-medium text-gray-700">Last name
+                    <label htmlFor="last_name" className="block text-sm font-medium text-gray-700">Last name
                     <input type="text" id="last_name" name="last_name" className="mt-1 focus:ring-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" /></label>
                   </div>
                   <div className="col-span-6">
-                    <label for="email" className="block text-sm font-medium text-gray-700">E-Mail-Adress
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">E-Mail-Adress
                     <input type="text" id="email" name="email" className="mt-1 focus:ring-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" /></label>
                   </div>
                   <div className="col-span-6">
-                    <label for="message" className="block text-sm font-medium text-gray-700">Your message
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700">Your message
                     <textarea id="message" name="message" className="mt-1 focus:ring-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" /></label>
                   </div>
                 </div>
