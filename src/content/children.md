@@ -1,11 +1,11 @@
 ---
 title: Children
-description: Ladies get the best haircuts
+description: Children get the best haircuts
     a the generic hairdresser
 path: /children
 menu: main
 order: 300
-title_image: https://placekitten.com/1500/600
+title_image: headercat.jpg
 title_image_alt: Sweet Kitten
 ---
 

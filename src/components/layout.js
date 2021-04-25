@@ -37,6 +37,8 @@ export default function Layout({ children, location }) {
             <img
               src={logo}
               alt="Logo"
+              height="80px"
+              width="255px"
               className="px-0 py-2 w-full h-16 lg:h-20 object-left object-contain"
             />
           </Link>

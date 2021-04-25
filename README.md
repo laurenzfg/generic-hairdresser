@@ -23,8 +23,8 @@ A [live version](https://laurenzfg-generic-hairdresser.netlify.app/) of the repo
 
 The template is still far from perfect:
 - [ ] Use `gatsby-plugin-manifest` to include the favicon the modern way. Currently it's still a good ol' .ico in the root folder
-- [ ] Include images in the pipeline. Images are currently plain .jpg assets. The pipeline could convert them to webp and make rendering faster by inserting a placeholder during the HTTP requests.
-- [ ] Specify a schema for the markdown frontmatter. Currently, this is dynamically populated. Thus all fields have to be present at least once, otherwise a different schema is deducted and compilation fails.
+- [ ] Port to Gatsby v3. This includes changing from gatsby-image to gatsby-plugin-image
+- [ ] Fully specify a schema for the markdown frontmatter. Currently, this is dynamically populated. Thus all fields have to be present at least once, otherwise a different schema is deducted and compilation fails.
 - [ ] Make the contact form look less foreign.
 
 ## 🧐 What's inside?

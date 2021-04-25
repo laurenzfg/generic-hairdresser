@@ -36,6 +36,8 @@ export default function MainMenu(props) {
           <img
             src={logo}
             alt="Logo"
+            height="80px"
+            width="255px"
             className="px-4 py-2 w-full h-16 lg:h-20 object-left object-contain"
           />
         </Link>
